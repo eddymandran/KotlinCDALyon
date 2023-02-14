@@ -4,25 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".ProfileDetailActivity"
     android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="start"
-        />
-    <Button
-        android:id="@+id/start_new_activity_btn"
+        android:text="Mon profile"/>
+    <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="start my activity" />
-
-    <Button
-        android:id="@+id/my_profile"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/age"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Parcelable -> My profile" />
-
+        android:layout_height="wrap_content"/>
 </LinearLayout>

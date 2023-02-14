@@ -27,6 +27,16 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("age", 25)
             startActivity(intent)
         }
+
+        // new button for parcelable
+        var profile = Profile("Alban", 25)
+        val btnParcelable = findViewById<Button>(R.id.my_profile)
+        btnParcelable.setOnClickListener{
+            val intentProfile = Intent(this, ProfileDetailsActivity::class.java)
+            intentProfile.putExtra("profile", profile)
+            startActivity(intentProfile)}
+
+
         //Log
         Log.v("Mainactivity", "Verbose message")
         Log.d("Mainactivity", "Debug message")
