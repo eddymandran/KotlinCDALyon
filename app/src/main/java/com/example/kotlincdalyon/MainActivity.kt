@@ -18,6 +18,13 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.start_new_activity_btn)
         button.setOnClickListener{
             val intent = Intent(this, NewActivity::class.java)
+            //Add action
+            intent.action =Intent.ACTION_VIEW
+            //add category
+            intent.addCategory("user")
+            //add Extrat
+            intent.putExtra("name", "Eddy")
+            intent.putExtra("age", 25)
             startActivity(intent)
         }
         //Log
